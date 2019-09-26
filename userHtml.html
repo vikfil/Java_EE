@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save user</title>
+</head>
+<body>
+<h1>Add New User</h1>
+<form action="user" method="post">
+    <table>
+        <tr><td>Name:</td><td><input type="text" name="name"/></td></tr>
+        <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+        <tr><td>Email:</td><td><input type="email" name="email"/></td></tr>
+        <tr><td>Country:</td><td>
+            <select name="country" style="width: 150px">
+                <option>India</option>
+                <option>Ukraine</option>
+                <option>America</option>
+            </select>
+        </td></tr>
+        <p>Please select the of User storage:</p>
+        <div>
+            <input type="radio" id="fileUser"
+                   name="storage" value="file">
+            <label for="fileUser">File</label>
+
+            <input type="radio" id="database"
+                   name="storage" value="database">
+            <label for="database">Database</label>
+
+        </div>
+        <tr><td colspan="2"><input type="submit" value="Save User"/></td></tr>
+    </table>
+</form>
+<form action="watch" method="post">
+    <p>Watch user from:</p>
+    <div>
+        <input type="radio" id="file"
+               name="stor" value="file">
+        <label for="file">File</label>
+
+        <input type="radio" id="dat"
+               name="stor" value="database">
+        <label for="dat">Database</label>
+    </div>
+    <input type="submit" value="Watch User"/>
+</form>
+
+</body>
+</html>
